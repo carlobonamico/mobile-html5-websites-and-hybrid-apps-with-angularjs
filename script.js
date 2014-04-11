@@ -2,7 +2,7 @@
 
 var ngSlides = angular.module('ngSlides', ['ngSanitize']);
 
-ngSlides.controller("presentationCtrl", function ($scope, $http, $rootScope, slidesMarkdownService) {
+ngSlides.controller("presentationCtrl", function ($scope, $http, $rootScope, $location, slidesMarkdownService) {
 
     $scope.print = false;
 
@@ -37,7 +37,6 @@ ngSlides.controller("presentationCtrl", function ($scope, $http, $rootScope, sli
     $scope.slides = slidesMarkdownService.getFromMarkdown('slides.md');
 
     $scope.currentSlide = 0;
-
 
     $scope.next = function () {
         $scope.currentSlide = $scope.currentSlide + 1;
@@ -86,7 +85,7 @@ ngSlides.service('slidesMarkdownService', function ($http) {
                     //FIXME
                     slides[0].background = "backgroundCover";
 
-                    slides[15].background = "specialEffect";
+                    //slides[15].background = "specialEffect";
 
                 }).
                 error(function (data, status, headers, config) {
@@ -135,3 +134,4 @@ function KeyPressed(e) {
 
 }
 //- See more at: http://www.syntacticsugr.com/23-javascript/sugr_cubes/81-globally-capture-key-press-events#sthash.tXpwzrI8.dpuf
+

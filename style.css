@@ -13,7 +13,7 @@
     .slide {
         /*
         background-color: yellow; */
-        font-size: 20pt;
+        font-size: 24pt;
         height: 100%;
         width: 100%;
         text-align: center;
@@ -21,6 +21,9 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 80px;
+    }
+    li li {
+       font-size: 20pt;
     }
 
     pre {
@@ -103,8 +106,9 @@ a[href]:after {
 
     h1 {
         position: fixed;
-        top: 20px;
-        left: 250px;
+        top: 10px;
+        left: 100px;
+        font-weight: bold;
     }
 
     h4 {
@@ -112,9 +116,15 @@ a[href]:after {
         bottom: 25px;
         right: 320px;
     }
-
+    .next {
+        position: fixed;
+        top: 15px;
+        right: 10px;
+        display: none;
+    }
     body {
         padding-top: 50px;
+        font-size: 20px;
   /*      padding-bottom: 50px; */
     }
 
@@ -122,5 +132,19 @@ a[href]:after {
     .slide {
         page-break-after: always;
     }
+    
+    .sideImage {
+        position: fixed!important;
+        top: 80px!important;
+        right: 30px!important;
+        max-width:300px!important;
+        height: auto!important;
+        
+    }
 
+    .centerImage {
+		max-width: 800px!important;
+		height: auto!important; 
+		
+    }
 

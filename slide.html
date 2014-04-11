@@ -1,0 +1,17 @@
+<div id="slidesContainer" class="slidesContainer" ng-swipe-left="next()" >
+    <div class="slide" ng-repeat="slide in slides" ng-show="print || slide.number == currentSlide" >
+
+        <div ng-bind-html="slide.html"></div>
+
+        <h4 class="number">{{slide.number}}</h4>
+		<button class="next" ng-click="next()">Next</button>
+    </div>
+
+    <!-- this is only to debug bindings during development -->
+    <div ng-show="debugMode">
+        {{currentSlide}}
+        <button ng-click="next()">Next</button>
+        <div>Debug: {{debug}}</div>
+        <div>Errors: {{error}}</div>
+    </div>
+</div>

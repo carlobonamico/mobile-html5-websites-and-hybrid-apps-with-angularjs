@@ -11,259 +11,88 @@
 
 
 --
-# Why AngularJS
-AngularJS lets you use today the features of next-generation web standards, making front-end development more productive and fun. What's better, it provides its "magic" tools such as databinding, dependency injection, modularity, composable and event-driven architecture to both web AND mobile apps. This "code-based" interactive talk will share some lessons learned in the development of mobile sites and apps with Angular, from how to structure applications, tune bandwidth and performance, interact with mobile-specific elements such as touch, sensors, and native-looking UX with Ionic Framework.
+# In short
+* AngularJS lets you use today the features of next-generation web standards, 
+  * making front-end development more productive and fun
+* What's better, it provides its "magic" tools to both web AND mobile apps
+  * databinding, dependency injection
+  * modularity, composable and event-driven architecture 
 
+* This``code-based`` interactive talk will share some lessons learned 
+  * how to structure applications
+  * tune bandwidth and performance
+  * interact with mobile-specific elements such as touch, sensors
+  * native-looking UX with Ionic Framework
 
---
-#Yes but you can't do that in a web based mobile app/site
-* Sure? people used to think it was impossible to get
-  * interactive email clients (GMail)
-  
-The web is (and will always be) more powerful than people think!
-  * this also applies to the mobile web platform
-  * mobile access which will overcome the "desktop" web in terms of traffic next year
 --
 #Web vs Native
-* I do not want to join the fight :-)
-  * but the gap will only become closer with time
+* I do not want to join the fight ;-)
+
+* The web tends to always be more powerful than people think!
+  * and the gap with native will only become smaller with time
   
-* there are many use cases for web-based sites
-  * 
-* and apps
-  * maximizing platform support (iOS, Android, Windows Phone... )
-  * to use Angular magic (filters, templating)
+* There are many use cases for web-based sites and hybrid apps (HTML5 packed in an app)
+  * avoiding install on device
+  * ensuring always latest version
+  * platform support: iOS, Android, Windows Phone... 
+  * easier and more familiar development workflow
+* And my favorite...
+  * to use Angular magic!
 --
-#But isn't JS on Mobile so slow?
---
-#Speed can mean many things
-* UX speed vs processing speed
+#So why AngularJS
+* Open Source framwework
+  * fast-growing
+  * great community
 
-* But the challenge isn't just being performant
-  * handle gestures
-  * respect user expectations (e.g. swipeable cards )
-  * manage navigation
-  * 
---
-#Performance
-* reduce DOM manipulation
-* no JS Animation, use CSS3 -> hw accelerated
-* maneageable number of binding
-* bind once and targeted bindings
+<img src="http://localhost:8000/angularjs.png" style="width: 200px;"/>
+##[http://www.angularjs.org](http://www.angularjs.org)
+<br/>
 
+* Lets you adopt future web architecture and tools today
+  * anticipate Web Components and EcmaScript 6
 
-Use the Batarang for tuning
---
-#Navigation
-* limits of ng-route
-  * single subview
---
-#Managing sensors
-* HTML5 standard APIs
-  * location
-  * orientation
-  * acceleration
-* more with PhoneGap APIs
-
+##Create modular, robust, testable apps
 -- 
-#Tools
-* Phonegap
-* Phonegap Build
-
---
-#Support Touch and Gestures
-* ng-touch
-  * ng-swipe
-  * eliminate fastclick
-* ionic-gestures
-* hammer.js for corner cases
-
---
-#Storing state
-* Local storage
-  * 
-  * 
-* PouchDB
-* AngularFire
-* BaasBox
---
-use pop for prototyping
-
---
-#Camera based
-
---
-#Chrome remote debugging
-Chrome screencast
-*Chrome emulator
-
-
---
-#The past
-* JQuery Mobile
-* Angular integration 
-  * different lifecycles
-  * at most, JQ Mobile for CSS and Angular for navigation and logic
---
-#The present (and near future)
-* Ionic Framework 
-  * performance obsessed
-  * mobile-looking
-  * extensible
-
-Open Source
-
-http://ionicframework.com/
---
-#Ionic CSS
-* elegant yet very lightweight
-* 
-```
-
-```
-* 3D animations, HW accelerated
-* sass-based
-  * custom theming
-  
-* 500 free icons (ionicons)
-
---
-#Ionic Directives
-* mobile interactions 
-* services for
-  * 
-  
---
-#Popups and modals
-
---
-#
-
---
-
---
-#Navigation 
-* based on UI-Router
-  * sub-views (e.g. Tabs)
-  * per-view navigation history
-  * 
-
---
-#
-
---
-#The Future
-* AngularJS 2.0 will be _Mobile First_
-  * performance
-  * browser support
-
-* Web Components on Mobile
-* EcmaScript 6 - Object.observe() -> ultrafast binding
-
--- 
-#Angular gives you structure
+#Angular gives structure and modularity
 * Dependency Injection
  * split component definition from component wiring
  
 * Module composition e.g.
   * common modules
   * mobile-only components
-  * desktop-onnly components
+  * desktop-only components
 
--- 
-#Bandwidth optimizations
-* The biggest cost is opening a connection, not transferring files
-* HTTP Keep-alive
-* GZip compression
-
-* Local manipulation
-* Local DB and sync?
-
---
-Firebase
-
--- 
-
---
-#Issues
-* Development-time structure
-  * multiple files
-  * component/dependency managers (bower...)
-* Compile-time structure
-  * limited number of files
-  * concatenation
-  * minification
-* Use a toolchain
-  * Marcello Teodori's talk on JS Power Tools
-  * use <<>> for supporting minification in Angular
---
-#Testable mobile apps?
-* first phase: prototyping on a Desktop browser
-* second phase: unit testing
-* third phase: on device testing
-
-* Chrome on-device debugging
-
---
-#OK, wo I will go for HTML5
-##to implement my next great service/project
-
-                              ... a few months go by...
-                              
-##WTF!! I did not think web development was could be that messy!
-
-* Spaghetti code tastes better in a dynamic language such as JS
-* I spent most of my time juggling the DOM
-* I cannot integrate the Form widgets I love with the charts library I love
-* Where is modularization? and encapsulation?
-  * "everything" can fiddle with "everything"...  
---
-
---
-#Fast-forward to 2015...
-## Definitely a no-brainer: 
 <br/>
-##go for Web Components + event-driven MVC
 
-* [http://mozilla.github.io/brick/docs.html](http://mozilla.github.io/brick/docs.html)
-* [http://www.polymer-project.org/](http://www.polymer-project.org/)
+## What you get: write less code, reuse more the code you write!
+--
+#But...
+##...isn't a web / JS Mobile app unusably slow?
 
---
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/William_Ford_Gibson.jpg/144px-William_Ford_Gibson.jpg" style="width: 200px;"/>
---
-#Enter AngularJS
-##Use tomorrow web technologies today
 <br/>
-<img src="http://localhost:8000/slides3/angularjs.png" style="width: 200px;"/>
-##[http://www.angularjs.org](http://www.angularjs.org)
-<br/>
-###And almost transparently upgrade as soon as they are available
-[http://www.2ality.com/2013/05/web-components-angular-ember.html](http://www.2ality.com/2013/05/web-components-angular-ember.html)
 
---
-#Robust, productive (& fun!) Web dev
-##Open Source _toolset_ 
-###backed by Google
-###great, active and open community
+## Let's try...
+
 <br/>
-###used from startups to Microsoft, Oracle & Google itself
+
+##_This_ presentation is an Angular-based _Single Page Application_
+
 <br/>
-##Extremely productive, robust, testable, and scalable
-###from mockups to small apps to large enterprise apps
+##Now we launch it on a phone and explore it with Chrome usb debugging
 --
-#Strong points
-* Angular follows and ehnances the _HTML way_ of doing things
-  * declarative
-  * interoperable
-* Event-driven Model-View-Controller
-  * plain JS models
-* Data binding
-##View is as decoupled as possibile from logic
-##Great for effective Designer-Developer workflows!
+#Discovering the device 
+* ``about:inspect``
+
+<img src="http://localhost:8000/images/chrome-devices.png" class="centerImage"/>
+
+* enable port forwarding from laptop to phone
+* open ``http://localhost:8000`` on the phone
 --
-Thanks [http://plnkr.co](http://plnkr.co) !
+#Monitoring CPU usage and FPS
+<img src="http://localhost:8000/images/chrome-monitor.png" class="centerImage"/>
 --
-#
+#Inspecting the page on the phone
+<img src="http://localhost:8000/images/chrome-inspect.png" class="centerImage"/>
 --
 #What's inside
 * A View: index.html
@@ -286,7 +115,7 @@ Thanks [http://plnkr.co](http://plnkr.co) !
     };
 ```
 --
-#A service to load the model from markdown
+#A service to load slides from markdown
 ```js
     ngSlides.service('slidesMarkdownService', function ($http) {
     var converter = new Showdown.converter();
@@ -332,7 +161,6 @@ Thanks [http://plnkr.co](http://plnkr.co) !
 </div>
 </body>
 ```
-
 * and a very simple css for positioning elements in the page
 --
 #A controller focused on interaction
@@ -357,74 +185,31 @@ Thanks [http://plnkr.co](http://plnkr.co) !
 
 });
 
-```
---
-#Integration with non-angular code
-* $apply utility function to notify angular of changes
-* angular.element( ...).scope()
-  * to access controller methods and scope outside angular
-```
-document.onkeyup = KeyPressed;
-
-function KeyPressed(e) {
-    var key = ( window.event ) ? event.keyCode : e.keyCode;
-
-    var controllerElement = angular.element(document.getElementById("slidesContainer"));
-    var scope = controllerElement.scope()
-
-    scope.$apply(function () {
-        switch (key) {
-            case 39:
-            {
-                scope.next();
-                break;
-            }
-    //...
-```
---
-#Slide sources in markdown format
-* ``slides.md``
-```txt
-#It's an AngularJS app I wrote in a few hours
-<br/>
-## Press F12 to be sure!
-```
-
---
-#What's inside - details
-* A custom directive
-* A few filters
+```   
 --
 #AngularJS magic
 ## Any sufficiently advanced technology is indistinguishable from magic.
 ###_Arthur C. Clarcke_
 
+<br/>
+
+* Add search within the slides in one line
 ```
-<li ng-repeat="slide in slides | filter:q">...</li>
+<div ng-repeat="slide in slides | filter:q">...</div>
 ```
+* where q is a variable containing the search keyword
 --
 #AngularJS magic is made of
-* Dependency Injection
-  * makes for decoupling, testability, and enriching of your code and tags
-
+* Two-way Databinding 
+  * split the view from the logic ``{{slide.number}}``
+* Dependency Injection 
+  * makes for decoupling, testability, and enriching of code and tags
 ```
-  function SlidesCtrl($scope, SlidesService)
-  {
+  function SlidesCtrl($scope, SlidesService) {
     SlidesService.loadFromMarkdown('slides.md');
   }
 ```
---
-#AngularJS magic is made of
-* Transparent navigation and history with ``ng-view`` and ``ng-route``
-* Databinding
-  * a few little tricks (Dirty checking) 
-  * which will disappear when the future (ECMAScript6 object.observe) arrives
---
-#The power of composition
-* Microkernel architecture
-  * core: HTML compiler, Dependency Injection, module system
-  * everything else is a directive, service or module
-* Composition of
+* The power of composition - of
   * modules 
     * ``module('slides',['slides.markdown'])``
   * directives 
@@ -432,84 +217,315 @@ function KeyPressed(e) {
   * filters 
     * `` slide in slides | filter:q | orderBy:title | limit:3``
   * ...
+
 --
-#Take advantage of AngularJS capabilities
-* Integration with other frameworks
-  * plain JS for keyboard handling
+#So Angular let you write less code
+* But what's more important, 
+  * less "low value" code 
+  * more readable code
+
+* So you can concentrate on your application idea
+
 * AngularJS is opinionated
-  * but it will let you follow a different way in case you really really need it
+  * but it will let you follow a different way in case you really need it
 --
-#Testing
-* Unit Testing
-  * mocking
-  * http mocking
-* End-To-End testing
-  * scenarios 
-* Jasmine
---
-#Weak points
-Even angular is not perfect... yet!
+#So, back to our mobile apps...
+* Speed can mean many things
+* UX speed vs processing speed
+  * databinding lets you easily display data progressively
+  * client-side rich models and filtering let you respond quickly to user input
+* network delays vs app response times
 
-* Dynamic page rendering, so SEO is hard
-  * temporary solutions with PhantomJS on the server side
-  * a few cloud-based services
-  * personally think Google is working on fixing that
-* Tooling is good but can improve
-* Support for lesser browser
---
-#Lessons learnt
---
-#Lessons learnt
-* Getting started is very easy
-* But to go further you need to learn the key concepts
-  * promises
-  * dependency injection
-  * directives
-  * scopes
---
-#Lessons learnt
-* Like all the magic wands, you could end up like Mikey Mouse as the apprentice sorcerer
+##But the challenge isn't just being performant
 
-* So get your training!
-  * Online
-  * Codemotion training (4-5 february and 4-5 march 2014)
-    * [http://training.codemotion.it/](http://training.codemotion.it/)
-  * NEW! Advanced course! coming in July-September 2014
+* Being an _awesome_ mobile app 
+  * handle gestures
+  * respect user expectations (e.g. swipeable cards )
+  * manage navigation
+  * manage app state and off-line availability
+  
+--
+#Performance Tips
+* reduce DOM manipulation
+  * use simple markup 
+  * move all styling to CSS
+* no JS Animation, use CSS3 
+  * HW accelerated transitions
+* optimize your databindings
+  * [https://www.exratione.com/2013/12/considering-speed-and-slowness-in-angularjs/](https://www.exratione.com/2013/12/considering-speed-and-slowness-in-angularjs/)
+* bind once and targeted bindings
+  * [https://github.com/Pasvaz/bindonce](https://github.com/Pasvaz/bindonce)
+--
+#Performance Tuning
+* Tune with AngularJS Batarang
+  * [https://github.com/angular/angularjs-batarang](https://github.com/angular/angularjs-batarang)
+  
+<img src="http://localhost:8000/images/chrome-batarang.png" class="centerImage"/>
+
+-- 
+#Bandwidth optimizations
+* The biggest cost is opening a connection, not transferring files
+  * use HTTP Keep-alive
+  * enable GZip compression
+  * [https://developers.google.com/speed/pagespeed/module](https://developers.google.com/speed/pagespeed/module)
+
+* Local manipulation of data greatly reduces network traffic
+  * Local DB and sync
+--
+#Support Touch and Gestures
+* Module _ng-touch_
+  * fastclick: eliminate the 300ms delay
+  * easily manage swipes
+  ```
+  <div ng-swipe-left="next()" >
+  ```
+* for advanced cases: 
+  * ionic-gestures
+ * hammer.js
+
+--
+#Storing state
+* On the device
+  * Session storage
+  * Local storage
+  * lawnchair
+  * PouchDB [http://pouchdb.com/](http://pouchdb.com/)
+
+* In the cloud
+  * Mongolab [http://mongolab.com](http://mongolab.com)
+  * Firebase with AngularFire [https://www.firebase.com](https://www.firebase.com)
+  * BaasBox [http://www.baasbox.com](http://www.baasbox.com)
+--
+#Managing sensors
+* HTML5 standard APIs support only some sensors
+  * location (very good support)
+  * orientation
+  * acceleration
+  
+* Additional sensors require the PhoneGap APIs
+
+* need to wrap all callbacks with 
+  * ``$apply()``
+  * or better, a dedicated service
+* to notify Angular of changes occurred out of its lifecycle
+  
+--
+# How to develop for mobile?
+* Chrome remote debugging and screencast
+  * [https://developers.google.com/chrome-developer-tools/docs/remote-debugging](https://developers.google.com/chrome-developer-tools/docs/remote-debugging)
+```
+chrome://inspect/#devices
+```
+* Emulate device resolutions, DPIs, sensors: 
+  * Chrome emulator
+  * Ripple Emulator [http://emulate.phonegap.com](http://emulate.phonegap.com)
+
+--
+#Issues
+* Development-time structure
+  * multiple files
+  * component/dependency managers (bower...)
+* Compile-time structure
+  * limited number of files
+  * concatenation
+  * minification
+* Use a toolchain
+  * Marcello Teodori's talk on JS Power Tools
+--
+#Testable mobile apps?
+* first phase: prototyping on a Desktop browser
+* second phase: unit testing
+  * way easier with AngularJS
+* third phase: on device testing
+
+* Chrome on-device debugging
+-- 
+#Packaging apps for markets
+* Phonegap
+  * [http://phonegap.com/](http://phonegap.com/)
+  * [https://cordova.apache.org/](https://cordova.apache.org/)
+* Phonegap Build
+  * [http://build.phonegap.com](http://build.phonegap.com)
+* Chrome Apps for Mobile
+  * [http://blog.chromium.org/2014/01/run-chrome-apps-on-mobile-using-apache.html  ](http://blog.chromium.org/2014/01/run-chrome-apps-on-mobile-using-apache.html  )
+--
+# Development tips
+* Cordova Browser
+  * you install it once
+  * and open your code on your web server
+  * continuous refresh without reinstalling the app
+
+--
+# What about the UI? 
+* or better the UX - _User Experience_?
+* Comparing mobile web frameworks
+  * [http://moduscreate.com/5-best-mobile-web-app-frameworks-ionic-angulalrjs/](http://moduscreate.com/5-best-mobile-web-app-frameworks-ionic-angulalrjs/)
+
+* JQuery Mobile
+  * widgets-only
+  * DOM-heavvy
+  * Angular integration is not simple (different lifecycles)
+  * at most, JQ Mobile for CSS and Angular for navigation and logic
+--
+#Enter Ionic Framework 
+* AngularJS-based, Open Source
+  * performance obsessed
+  * mobile-looking
+  * extensible
+
+<img src="http://localhost:8000/images/ionic.png" class="centerImage"/>
+
+* [http://ionicframework.com/](http://ionicframework.com/)
+* [http://ionicframework.com/getting-started/](http://ionicframework.com/getting-started/)
+* [http://ionicframework.com/docs/guide/](http://ionicframework.com/docs/guide/)
+--
+#What's inside?
+* Ionic CSS
+* Ionic Icons
+* Ionic Directives
+
+* and support Tooling
+--
+#Ionic CSS
+* elegant yet very lightweight
+
+<img src="http://localhost:8000/images/ionic-css.png" class="sideImage"/>
+
+```
+<div class="list">
+  <div class="item item-divider">
+    Candy Bars
+  </div>
+  <a class="item" href="#">
+    Butterfinger
+  </a>
+</div>
+```
+* [http://ionicframework.com/docs/components/](http://ionicframework.com/docs/components/)
+
+* 3D animations, HW accelerated
+* sass-based for custom theming
+* 500 free icons (ionicons)
+
+--
+#Ionic Directives
+* mobile navigation and interactions 
+```
+<ion-list>
+  <ion-item ng-repeat="item in items"
+    item="item"
+    can-swipe="true"
+    option-buttons="itemButtons">
+  </ion-item>
+</ion-list>
+```
+<img src="http://localhost:8000/images/ionic-list.png" class="sideImage"/>
+
+* services for
+  * gestures
+  * navigation
+* [http://ionicframework.com/docs/api](http://ionicframework.com/docs/api)
+--
+#Let's play around...
+* [http://plnkr.co/edit/Mcw6F2BQP3RbB8ZhBYRl?p=preview](http://plnkr.co/edit/Mcw6F2BQP3RbB8ZhBYRl?p=preview)
+* Live reloading and tinkering
+
+<img src="http://localhost:8000/images/ionic-plnkr.png" class="centerImage"/>
+
+--
+#Navigation 
+* based on UI-Router 
+  * [http://angular-ui.github.io/ui-router](http://angular-ui.github.io/ui-router)
+  * sub-views (e.g. Tabs)
+  * per-view navigation history
+
+* UI Gallery 
+* [http://ionicframework.com/present-ionic/slides/#/16 ](http://ionicframework.com/present-ionic/slides/#/16 )
+
+<img src="http://localhost:8000/images/ionic-navigation.png" class="sideImage"/>
+
+--
+#Ionic Tooling
+* PhoneGap based build chain
+```
+$ npm -g install ionic
+$ ionic start myApp tabs
+
+$ cd myApp
+$ ionic platform add ios
+$ ionic build ios
+$ ionic emulate ios
+```
+
+--
+#The Future
+* AngularJS 2.0 will be _Mobile First_
+  * performance
+  * browser support
+  * [http://blog.angularjs.org/2014/03/angular-20.html](http://blog.angularjs.org/2014/03/angular-20.html)
+  
+* Web Components on Mobile
+* EcmaScript 6 - ``Object.observe()`` -> ultrafast binding
+
+
 
 --
 #Lessons learnt
-* AngularJS makes for great mockups
-  * interactivity in plain HTML views
+* AngularJS can be viable on mobile
+  * interactivity in plain HTML5 views
+  
 * AngularJS changes your way of working (for the better!)
   * let you free of concentrating on your ideas
   * makes for a way faster development cycle
   * makes for a way faster interaction with customer cycle
   * essential for Continuous Delivery!
+--
+#Lessons learnt
+* Like all the magic wands, you could end up like Mikey Mouse as the apprentice sorcerer
+* Getting started is very easy
+* But to go further you need to learn the key concepts
+  * scopes
+  * dependency injection
+  * directives
+  * promises
+
+* So get your training!
+  * Codemotion training (june 2014)
+    * [http://training.codemotion.it/](http://training.codemotion.it/)
+
+* __NEW! Advanced AngularJS course__ 
+  * coming in July-September 2014
 
 --
 #To learn more
+* Books
+  * [http://www.ng-book.com/](http://www.ng-book.com/) - __Recommended!__
+  * AngularJS and .NET [http://henriquat.re](http://henriquat.re)
+
 * Online tutorials and video trainings:
   * [http://www.yearofmoo.com/](http://www.yearofmoo.com/)
   * [http://egghead.io](http://egghead.io)
+
 * All links and reference from my Codemotion Workshop
   * [https://github.com/carlobonamico/angularjs-quickstart](https://github.com/carlobonamico/angularjs-quickstart)
   * [https://github.com/carlobonamico/angularjs-quickstart/blob/master/references.md](https://github.com/carlobonamico/angularjs-quickstart/blob/master/references.md)
+
 * Full lab from my Codemotion Workshop
   * [https://github.com/carlobonamico/angularjs-quickstart](https://github.com/carlobonamico/angularjs-quickstart)
 --
-#
-* attend Marcello Teodori talk on JS Power Tools
-
---
-#Books
-* [http://www.ng-book.com/](http://www.ng-book.com/)
-* AngularJS and .NET [http://henriquat.re](http://henriquat.re)
---
-#My current plans
-* writing about AngularJS and security
+#Even more
+* Optimizing AngularJS for mobile
+  * [http://blog.revolunet.com/angular-for-mobile](http://blog.revolunet.com/angular-for-mobile)
+  * [http://www.ng-newsletter.com/posts/angular-on-mobile.html](http://www.ng-newsletter.com/posts/angular-on-mobile.html)
+  * [https://www.youtube.com/watch?v=xOAG7Ab_Oz0](https://www.youtube.com/watch?v=xOAG7Ab_Oz0)
+  * [http://www.bennadel.com/blog/2492-What-A-Select-watch-Teaches-Me-About-ngModel-And-AngularJS.htm](http://www.bennadel.com/blog/2492-What-A-Select-watch-Teaches-Me-About-ngModel-And-AngularJS.htm)
+* Web Components
+  * [http://mozilla.github.io/brick/docs.html](http://mozilla.github.io/brick/docs.html)
+  * [http://www.polymer-project.org/](http://www.polymer-project.org/)
 --
 #Thank you!
 * Explore these slides
+  * [https://github.com/carlobonamico/mobile-html5-websites-and-hybrid-apps-with-angularjs](https://github.com/carlobonamico/mobile-html5-websites-and-hybrid-apps-with-angularjs)
   * [https://github.com/carlobonamico/angularjs-future-web-development-slides](https://github.com/carlobonamico/angularjs-future-web-development-slides)
 * My presentations
   * [http://slideshare.net/carlo.bonamico](http://slideshare.net/carlo.bonamico)

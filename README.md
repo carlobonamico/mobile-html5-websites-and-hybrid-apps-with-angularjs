@@ -3,11 +3,11 @@ angularjs-future-web-development-slides
 
 Codemotion 2014 slides (and demo) 
 
-Watch it at http://carlobonamico.github.io/
+Watch it at http://carlobonamico.github.io/mobile-html5-websites-and-hybrid-apps-with-angularjs
+(Advance with left and right arrows)
 
 And soon in video (Italian) on 
 http://video.html.it
-
 
 
 See also my talk "AngularJS: How to code today with tomorrow tools"
