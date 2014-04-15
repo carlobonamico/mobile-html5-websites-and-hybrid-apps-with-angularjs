@@ -106,7 +106,7 @@ a[href]:after {
 
     h1 {
         position: fixed;
-        top: 10px;
+        top: 0px;
         left: 100px;
         font-weight: bold;
     }
@@ -135,16 +135,18 @@ a[href]:after {
     
     .sideImage {
         position: fixed!important;
-        top: 80px!important;
+        top: 70px!important;
         right: 30px!important;
         max-width:300px!important;
         height: auto!important;
+        max-height: 700px !important;
         
     }
 
     .centerImage {
 		max-width: 800px!important;
 		height: auto!important; 
+		max-height: 600px !important;
 		
     }
 

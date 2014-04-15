@@ -136,9 +136,7 @@
                     }
                 });
             return slides;
-        }
-    }
-})
+        } } })
 ```
 --
 #A simple declarative view
@@ -203,7 +201,7 @@
 * Two-way Databinding 
   * split the view from the logic ``{{slide.number}}``
 * Dependency Injection 
-  * makes for decoupling, testability, and enriching of code and tags
+  * gives decoupling, testability & enriching of code and tags
 ```
   function SlidesCtrl($scope, SlidesService) {
     SlidesService.loadFromMarkdown('slides.md');
@@ -426,11 +424,12 @@ chrome://inspect/#devices
   * navigation
 * [http://ionicframework.com/docs/api](http://ionicframework.com/docs/api)
 --
-#Let's play around...
-* [http://plnkr.co/edit/Mcw6F2BQP3RbB8ZhBYRl?p=preview](http://plnkr.co/edit/Mcw6F2BQP3RbB8ZhBYRl?p=preview)
-* Live reloading and tinkering
+#Let's play around... (with Live Reload)
 
-<img src="http://localhost:8000/images/ionic-plnkr.png" class="centerImage"/>
+<img src="http://localhost:8000/images/ionic-plnkr.png" class="centerImage" />
+
+* [http://plnkr.co/edit/Mcw6F2BQP3RbB8ZhBYRl?p=preview](http://plnkr.co/edit/Mcw6F2BQP3RbB8ZhBYRl?p=preview)
+
 
 --
 #Navigation 
