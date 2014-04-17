@@ -399,7 +399,7 @@ chrome://inspect/#devices
   </a>
 </div>
 ```
-* [http://ionicframework.com/docs/components/](http://ionicframework.com/docs/components/)
+* [http://ionicframework.com/docs/](http://ionicframework.com/docs/)
 
 * 3D animations, HW accelerated
 * sass-based for custom theming
@@ -434,12 +434,12 @@ chrome://inspect/#devices
 --
 #Navigation 
 * based on UI-Router 
-  * [http://angular-ui.github.io/ui-router](http://angular-ui.github.io/ui-router)
+* [http://angular-ui.github.io/ui-router](http://angular-ui.github.io/ui-router)
   * sub-views (e.g. Tabs)
   * per-view navigation history
 
 * UI Gallery 
-* [http://ionicframework.com/present-ionic/slides/#/16 ](http://ionicframework.com/present-ionic/slides/#/16 )
+  * [http://ionicframework.com/present-ionic/slides/#/16 ](http://ionicframework.com/present-ionic/slides/#/16 )
 
 <img src="http://localhost:8000/images/ionic-navigation.png" class="sideImage"/>
 
