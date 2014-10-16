@@ -44,7 +44,7 @@
   * fast-growing
   * great community
 
-<img src="http://localhost:8000/angularjs.png" style="width: 200px;"/>
+<img src="angularjs.png" class="centerImage"/>
 ##[http://www.angularjs.org](http://www.angularjs.org)
 <br/>
 
@@ -83,16 +83,16 @@
 #Discovering the device 
 * ``about:inspect``
 
-<img src="http://localhost:8000/images/chrome-devices.png" class="centerImage"/>
+<img src="images/chrome-devices.png" class="centerImage"/>
 
 * enable port forwarding from laptop to phone
 * open ``http://localhost:8000`` on the phone
 --
 #Monitoring CPU usage and FPS
-<img src="http://localhost:8000/images/chrome-monitor.png" class="centerImage"/>
+<img src="images/chrome-monitor.png" class="centerImage"/>
 --
 #Inspecting the page on the phone
-<img src="http://localhost:8000/images/chrome-inspect.png" class="centerImage"/>
+<img src="images/chrome-inspect.png" class="centerImage"/>
 --
 #What's inside
 * A View: index.html
@@ -258,7 +258,7 @@
 * Tune with AngularJS Batarang
   * [https://github.com/angular/angularjs-batarang](https://github.com/angular/angularjs-batarang)
   
-<img src="http://localhost:8000/images/chrome-batarang.png" class="centerImage"/>
+<img src="images/chrome-batarang.png" class="centerImage"/>
 
 -- 
 #Bandwidth optimizations
@@ -371,7 +371,7 @@ chrome://inspect/#devices
   * mobile-looking
   * extensible
 
-<img src="http://localhost:8000/images/ionic.png" class="centerImage"/>
+<img src="images/ionic.png" class="centerImage"/>
 
 * [http://ionicframework.com/](http://ionicframework.com/)
 * [http://ionicframework.com/getting-started/](http://ionicframework.com/getting-started/)
@@ -387,7 +387,7 @@ chrome://inspect/#devices
 #Ionic CSS
 * elegant yet very lightweight
 
-<img src="http://localhost:8000/images/ionic-css.png" class="sideImage"/>
+<img src="images/ionic-css.png" class="sideImage"/>
 
 ```
 <div class="list">
@@ -417,7 +417,7 @@ chrome://inspect/#devices
   </ion-item>
 </ion-list>
 ```
-<img src="http://localhost:8000/images/ionic-list.png" class="sideImage"/>
+<img src="images/ionic-list.png" class="sideImage"/>
 
 * services for
   * gestures
@@ -426,7 +426,7 @@ chrome://inspect/#devices
 --
 #Let's play around... (with Live Reload)
 
-<img src="http://localhost:8000/images/ionic-plnkr.png" class="centerImage" />
+<img src="images/ionic-plnkr.png" class="centerImage" />
 
 * [http://plnkr.co/edit/Mcw6F2BQP3RbB8ZhBYRl?p=preview](http://plnkr.co/edit/Mcw6F2BQP3RbB8ZhBYRl?p=preview)
 
@@ -441,7 +441,7 @@ chrome://inspect/#devices
 * UI Gallery 
   * [http://ionicframework.com/present-ionic/slides/#/16 ](http://ionicframework.com/present-ionic/slides/#/16 )
 
-<img src="http://localhost:8000/images/ionic-navigation.png" class="sideImage"/>
+<img src="images/ionic-navigation.png" class="sideImage"/>
 
 --
 #Ionic Tooling

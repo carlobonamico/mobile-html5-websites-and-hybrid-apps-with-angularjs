@@ -51,7 +51,7 @@ ngSlides.controller("presentationCtrl", function ($scope, $http, $rootScope, $lo
 });
 
 
-ngSlides.service('slidesMarkdownService', function ($http) {
+ngSlides.service('slidesMarkdownService', function ($http, $sce) {
 
     //https://github.com/btford/angular-markdown-directive
     var converter = new Showdown.converter();
@@ -77,7 +77,7 @@ ngSlides.service('slidesMarkdownService', function ($http) {
 
                         };
 
-                        slide.html = converter.makeHtml(slide.content);
+                        slide.html = $sce.trustAsHtml(converter.makeHtml(slide.content));
                         slides.push(slide);
 
                     }
